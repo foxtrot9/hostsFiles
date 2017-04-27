@@ -25,15 +25,19 @@ editor.
 ### 2.0 Get a backup of your current hosts file.
 **Windows**: `copy hosts hosts_backup.txt`
 
-**Linux**: `cp hosts hosts_backup.txt`
-
-**MAC OS X**: `cp hosts hosts_backup.txt`
+**Linux** + **MAC OS X**: `cp hosts hosts_backup.txt`
 
 ### 2.1 Change ownsership settings for file.
 
 **Windows**:
-```
-```
+1. Change properties of `hosts` file.
+![1](https://raw.githubusercontent.com/foxtrot9/hostsFiles/master/Images/win1.png)
+
+2. Select `Edit` option in `security` tab.
+![2](https://raw.githubusercontent.com/foxtrot9/hostsFiles/master/Images/win2.png)
+
+3. Allow `Modify` and `Write` for `Users`. Select apply.
+![3](https://raw.githubusercontent.com/foxtrot9/hostsFiles/master/Images/win3.png)
 
 **Linux** + **MAC OS X**: `ls -l hosts` Gives current ownership rights.
 
@@ -47,8 +51,7 @@ Change them to `sudo chmod +777 hosts`.
 ### 2.3 Change ownership rights back to normal.
 
 **Windows**:
-```
-```
+Follow [Section 2.1](https://github.com/foxtrot9/hostsFiles#21-change-ownsership-settings-for-file) and revert back changes done in last step.
 
 **Linux** + **MAC OS X**: Say old rights were `644` which means `-rw-r--r--` in output of section 2.1.
 
