@@ -8,9 +8,11 @@ Bans additional websites:
 behance.net
 
 ## Instructions for editing your hosts file.
-1. Find out location of your hosts file.
-2. Append [hosts.txt](https://raw.githubusercontent.com/foxtrot9/hostsFiles/master/hosts.txt) file.
-3. Reload `hosts` file.
+[1.](https://github.com/foxtrot9/hostsFiles#1-location-of-your-hosts-file)  Find out location of your hosts file.
+
+[2.](https://github.com/foxtrot9/hostsFiles#2-append-hoststxt-file) Append [hosts.txt](https://raw.githubusercontent.com/foxtrot9/hostsFiles/master/hosts.txt) file.
+
+[3.](https://github.com/foxtrot9/hostsFiles#3-reloading-hosts-file) Reload `hosts` file.
 
 ## 1. Location of your hosts file
 To modify your current `hosts` file, look for it in the following places and modify it with a text
@@ -47,7 +49,7 @@ editor.
 
 **Linux** + **MAC OS X**: `ls -l hosts` Gives current ownership rights.
 
-Change them to `sudo chmod +777 hosts`.
+Change them to `sudo chmod +777 hosts`
 
 ### 2.2 Append hosts.txt file.
 **Windows**: `type hosts.txt >> hosts`
