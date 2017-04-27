@@ -31,13 +31,19 @@ editor.
 
 **Windows**:
 1. Change properties of `hosts` file.
+
 ![1](https://raw.githubusercontent.com/foxtrot9/hostsFiles/master/Images/win1.png)
 
+
 2. Select `Edit` option in `security` tab.
+
 ![2](https://raw.githubusercontent.com/foxtrot9/hostsFiles/master/Images/win2.png)
 
+
 3. Allow `Modify` and `Write` for `Users`. Select apply.
+
 ![3](https://raw.githubusercontent.com/foxtrot9/hostsFiles/master/Images/win3.png)
+
 
 **Linux** + **MAC OS X**: `ls -l hosts` Gives current ownership rights.
 
