@@ -22,18 +22,52 @@ editor.
 
 ## 2. Append `hosts.txt` file.
 
+### 2.0 Get a backup of your current hosts file.
+**Windows**: `copy hosts hosts_backup.txt`
+
+**Linux**: `cp hosts hosts_backup.txt`
+
+**MAC OS X**: `cp hosts hosts_backup.txt`
+
+### 2.1 Change ownsership settings for file.
+
+**Windows**:
+```
+```
+
+**Linux** + **MAC OS X**: `ls -l hosts` Gives current ownership rights.
+
+Change them to `sudo chmod +777 hosts`.
+
+### 2.2 Append hosts.txt file.
+**Windows**: `type hosts.txt >> hosts`
+
+**Linux** + **MAC OS X**: `cat hosts.txt >> hosts`
+
+### 2.3 Change ownership rights back to normal.
+
+**Windows**:
+```
+```
+
+**Linux** + **MAC OS X**: Say old rights were `644` which means `-rw-r--r--` in output of section 2.1.
+
+```
+sudo chmod -777 hosts
+sudo chmod +644 hosts
+```
 
 ## 3. Reloading hosts file
 Your operating system will cache DNS lookups. You can either reboot or run the following commands to
 manually flush your DNS cache once the new hosts file is in place.
 
-### Mac OS X
+#### Mac OS X
 Open a Terminal and run:
 ```
 sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder
 ```
 
-### Windows
+#### Windows
 
 |`makeHostsWindows.bat` BATCH file will create various alternate hosts files by combining and adding the gambling, porn, and social media extensions. You need to be connected to the Internet. This file REQUIRED installed Python 3.5.x runtime environment in Windows System. Launch this file as normal user.|
 :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -72,7 +106,7 @@ sc config "Dnscache" start= disabled
 sc stop "Dnscache"
 ```
 
-### Linux
+#### Linux
 Open a Terminal and run with root privileges:
 
 **Debian/Ubuntu** `sudo /etc/rc.d/init.d/nscd restart`
