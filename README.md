@@ -2,10 +2,12 @@
 Modified Hosts file. Uses a special version of hosts file forked from https://github.com/StevenBlack/hosts
 
 Bans ads on websites:
-fmovies.to
+
+`fmovies.to`
 
 Bans additional websites:
-behance.net
+
+`behance.net`
 
 ## Instructions for editing your hosts file.
 [1.](https://github.com/foxtrot9/hostsFiles#1-location-of-your-hosts-file)  Find out location of your hosts file.
@@ -61,7 +63,7 @@ Change them to `sudo chmod +777 hosts`
 **Windows**:
 Follow [Section 2.1](https://github.com/foxtrot9/hostsFiles#21-change-ownsership-settings-for-file) and revert back changes done in last step.
 
-**Linux** + **MAC OS X**: Say old rights were `644` which means `-rw-r--r--` in output of section 2.1.
+**Linux** + **MAC OS X**: Say old rights were `644` which means `-rw-r--r--` in output of [Section 2.1](https://github.com/foxtrot9/hostsFiles#21-change-ownsership-settings-for-file).
 
 ```
 sudo chmod -777 hosts
