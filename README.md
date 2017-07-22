@@ -7,6 +7,7 @@ Bans ads on websites:
 
 Bans additional websites:
 
+`vk.com`
 `behance.net`
 
 ## Instructions for editing your hosts file.
